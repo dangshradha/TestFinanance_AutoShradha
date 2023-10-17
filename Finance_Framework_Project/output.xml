@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231017 18:45:53.646" rpa="false" schemaversion="4">
+<suite id="s1" name="LoginPage" source="C:\Finance_Robot_Framework\TestCases\LoginPage.robot">
+<test id="s1-t1" name="run keywords" line="14">
+<kw name="Open Browser Session" library="BrowserSessions" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231017 18:45:53.902" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com'.</msg>
+<status status="PASS" starttime="20231017 18:45:53.902" endtime="20231017 18:46:00.461"/>
+</kw>
+<status status="PASS" starttime="20231017 18:45:53.902" endtime="20231017 18:46:00.461"/>
+</kw>
+<kw name="Click On SignIn Button" library="HomePage">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231017 18:46:00.462" endtime="20231017 18:46:00.585"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header-signin-link"]/span</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231017 18:46:00.585" endtime="20231017 18:46:00.631"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header-signin-link"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:00.631" level="INFO">Clicking element 'xpath=//*[@id="header-signin-link"]/span'.</msg>
+<status status="PASS" starttime="20231017 18:46:00.631" endtime="20231017 18:46:06.814"/>
+</kw>
+<status status="PASS" starttime="20231017 18:46:00.462" endtime="20231017 18:46:06.814"/>
+</kw>
+<kw name="Click On Create Account Button" library="HomePage">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231017 18:46:06.814" endtime="20231017 18:46:06.822"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//*[@id="createacc"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231017 18:46:06.822" endtime="20231017 18:46:06.869"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="createacc"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:06.869" level="INFO">Clicking element 'xpath=//*[@id="createacc"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:06.869" endtime="20231017 18:46:07.492"/>
+</kw>
+<status status="PASS" starttime="20231017 18:46:06.814" endtime="20231017 18:46:07.492"/>
+</kw>
+<kw name="Create Account" library="CreateAccountPage">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath= //*[@id="usernamereg\-firstName"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231017 18:46:07.492" endtime="20231017 18:46:07.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-firstName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.545" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-firstName"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.537" endtime="20231017 18:46:07.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-firstName"]</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.631" level="INFO">Typing text 'ABC' into text field 'xpath=//*[@id="usernamereg-firstName"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.631" endtime="20231017 18:46:07.771"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-lastName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.771" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-lastName"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.771" endtime="20231017 18:46:07.846"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-lastName"]</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.847" level="INFO">Typing text 'XYZ' into text field 'xpath=//*[@id="usernamereg-lastName"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.846" endtime="20231017 18:46:07.922"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-userId"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.922" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-userId"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.922" endtime="20231017 18:46:07.997"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-userId"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:07.998" level="INFO">Typing text 'Testtemp_Try_zyx' into text field 'xpath=//*[@id="usernamereg-userId"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:07.997" endtime="20231017 18:46:08.108"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="usernamereg-password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.108" level="INFO">Clicking element '//*[@id="usernamereg-password"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.108" endtime="20231017 18:46:08.192"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="usernamereg-password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.192" level="INFO">Typing password into text field '//*[@id="usernamereg-password"]'.</msg>
+<msg timestamp="20231017 18:46:08.255" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231017 18:46:08.312" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231017 18:46:08.192" endtime="20231017 18:46:08.312"/>
+</kw>
+<kw name="Split String" library="String">
+<var>${year}</var>
+<arg>${dob}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<msg timestamp="20231017 18:46:08.312" level="INFO">${year} = ['04', 'January', '1990']</msg>
+<status status="PASS" starttime="20231017 18:46:08.312" endtime="20231017 18:46:08.312"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${year}[2]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231017 18:46:08.312" endtime="20231017 18:46:08.312"/>
+</kw>
+<kw name="Split String" library="String">
+<var>${day}</var>
+<arg>${dob}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<msg timestamp="20231017 18:46:08.312" level="INFO">${day} = ['04', 'January', '1990']</msg>
+<status status="PASS" starttime="20231017 18:46:08.312" endtime="20231017 18:46:08.312"/>
+</kw>
+<kw name="Split String" library="String">
+<var>${month}</var>
+<arg>${dob}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<msg timestamp="20231017 18:46:08.312" level="INFO">${month} = ['04', 'January', '1990']</msg>
+<status status="PASS" starttime="20231017 18:46:08.312" endtime="20231017 18:46:08.312"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-month"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.312" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-month"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.312" endtime="20231017 18:46:08.410"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-day"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.412" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-day"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.412" endtime="20231017 18:46:08.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-day"]</arg>
+<arg>${day}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.501" level="INFO">Typing text '04' into text field 'xpath=//*[@id="usernamereg-day"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.501" endtime="20231017 18:46:08.604"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${day}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231017 18:46:08.604" endtime="20231017 18:46:08.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-year"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.604" level="INFO">Clicking element 'xpath=//*[@id="usernamereg-year"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.604" endtime="20231017 18:46:08.682"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="usernamereg\-year"]</arg>
+<arg>${year}[2]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.682" level="INFO">Typing text '1990' into text field 'xpath=//*[@id="usernamereg-year"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.682" endtime="20231017 18:46:08.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="reg\-submit\-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 18:46:08.779" level="INFO">Clicking element 'xpath=//*[@id="reg-submit-button"]'.</msg>
+<status status="PASS" starttime="20231017 18:46:08.779" endtime="20231017 18:46:09.185"/>
+</kw>
+<status status="PASS" starttime="20231017 18:46:07.492" endtime="20231017 18:46:09.185"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"Account Created Succesfully"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231017 18:46:09.186" level="INFO">"Account Created Succesfully"</msg>
+<status status="PASS" starttime="20231017 18:46:09.186" endtime="20231017 18:46:09.186"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"UserID:"</arg>
+<arg>${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231017 18:46:09.186" endtime="20231017 18:46:09.187"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Password:"</arg>
+<arg>${password}}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231017 18:46:09.188" endtime="20231017 18:46:09.189"/>
+</kw>
+<kw name="Close Browser Session" library="BrowserSessions" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231017 18:46:09.190" endtime="20231017 18:46:11.459"/>
+</kw>
+<status status="PASS" starttime="20231017 18:46:09.190" endtime="20231017 18:46:11.459"/>
+</kw>
+<status status="PASS" starttime="20231017 18:45:53.902" endtime="20231017 18:46:11.461"/>
+</test>
+<doc>Tests which login Finance Page.</doc>
+<status status="PASS" starttime="20231017 18:45:53.662" endtime="20231017 18:46:11.461"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginPage">LoginPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
